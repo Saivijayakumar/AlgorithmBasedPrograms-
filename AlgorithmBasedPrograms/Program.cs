@@ -18,7 +18,7 @@ namespace AlgorithmBasedPrograms
             Console.WriteLine("\t\t--------------->Welcome To Algorithm Based Programs<-----------------\n");
             Console.WriteLine("-----------{MENU}-----------");
             Console.WriteLine("----------------------------------------");
-            Console.WriteLine("1.Permutation Of String\n2.BinarySearch");
+            Console.WriteLine("1.Permutation Of String\n2.Binary Search\n3.Insertion Sort");
             Console.WriteLine("----------------------------------------");
             Console.WriteLine("Enter Your Choice");
             switch (Console.ReadLine())
@@ -35,6 +35,9 @@ namespace AlgorithmBasedPrograms
                     List<string> wordList = new List<string>(filepath.Split(' '));
                     wordList.Sort();
                     BinarySearchClass.BinarySearch(wordList);
+                    break;
+                case "3":
+                    InsertionSort.ReadInput();
                     break;
                 default:
                     Console.WriteLine("Enter Valid Choice");
