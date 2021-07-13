@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,7 +18,7 @@ namespace AlgorithmBasedPrograms
             Console.WriteLine("\t\t--------------->Welcome To Algorithm Based Programs<-----------------\n");
             Console.WriteLine("-----------{MENU}-----------");
             Console.WriteLine("----------------------------------------");
-            Console.WriteLine("1.Permutation Of String\n2.");
+            Console.WriteLine("1.Permutation Of String\n2.BinarySearch");
             Console.WriteLine("----------------------------------------");
             Console.WriteLine("Enter Your Choice");
             switch (Console.ReadLine())
@@ -28,6 +29,12 @@ namespace AlgorithmBasedPrograms
                     int length = str.Length;
                     Console.WriteLine("The Permutations For {0} is ",str);
                     PermutationsOfString.permute(str, 0, length - 1);
+                    break;
+                case "2":
+                    string filepath = File.ReadAllText(@"C:\Users\SaiVijay\source\repos\AlgorithmBasedPrograms\AlgorithmBasedPrograms\wordlist.txt");
+                    List<string> wordList = new List<string>(filepath.Split(' '));
+                    wordList.Sort();
+                    BinarySearchClass.BinarySearch(wordList);
                     break;
                 default:
                     Console.WriteLine("Enter Valid Choice");
