@@ -18,7 +18,7 @@ namespace AlgorithmBasedPrograms
             Console.WriteLine("\t\t--------------->Welcome To Algorithm Based Programs<-----------------\n");
             Console.WriteLine("-----------{MENU}-----------");
             Console.WriteLine("----------------------------------------");
-            Console.WriteLine("1.Permutation Of String\n2.Binary Search\n3.Insertion Sort");
+            Console.WriteLine("1.Permutation Of String\n2.Binary Search\n3.Insertion Sort\n4.Bubble Sort ");
             Console.WriteLine("----------------------------------------");
             Console.WriteLine("Enter Your Choice");
             switch (Console.ReadLine())
@@ -38,6 +38,9 @@ namespace AlgorithmBasedPrograms
                     break;
                 case "3":
                     InsertionSort.ReadInput();
+                    break;
+                case "4":
+                    BubbleSort.ReadInputForBubbleSort();
                     break;
                 default:
                     Console.WriteLine("Enter Valid Choice");
