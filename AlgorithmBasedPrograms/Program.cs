@@ -48,6 +48,9 @@ namespace AlgorithmBasedPrograms
                 case "6":
                     AnagramDetection.ReadAnagramInputs();
                     break;
+                case "7":
+                    FindPrimes.Prime();
+                    break;
                 default:
                     Console.WriteLine("Enter Valid Choice");
                     break;
