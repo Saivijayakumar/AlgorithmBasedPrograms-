@@ -8,6 +8,10 @@ namespace AlgorithmBasedPrograms
 {
     class BinarySearchClass
     {
+        /// <summary>
+        /// It works For all data types
+        /// </summary>
+        /// <param name="wordList"></param>
         public static void BinarySearch(List<string> wordList)
         {
             //Local Variables

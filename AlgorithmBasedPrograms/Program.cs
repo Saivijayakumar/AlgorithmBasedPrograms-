@@ -37,7 +37,7 @@ namespace AlgorithmBasedPrograms
                     BinarySearchClass.BinarySearch(wordList);
                     break;
                 case "3":
-                    InsertionSort.ReadInput();
+                    InsertionSort<int>.ReadInput();
                     break;
                 case "4":
                     BubbleSort.ReadInputForBubbleSort();
