@@ -50,6 +50,7 @@
     <Compile Include="InsertionSort.cs" />
     <Compile Include="MergeSortLogic.cs" />
     <Compile Include="PermutationsOfString.cs" />
+    <Compile Include="PrimeAnagram.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

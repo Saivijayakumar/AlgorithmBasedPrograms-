@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AlgorithmBasedPrograms
 {
-    class AnagramDetection
+    public class AnagramDetection
     {
         public static void ReadAnagramInputs()
         {
