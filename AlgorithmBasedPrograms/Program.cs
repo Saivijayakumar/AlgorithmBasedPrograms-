@@ -18,7 +18,7 @@ namespace AlgorithmBasedPrograms
             Console.WriteLine("\t\t--------------->Welcome To Algorithm Based Programs<-----------------\n");
             Console.WriteLine("-----------{MENU}-----------");
             Console.WriteLine("----------------------------------------");
-            Console.WriteLine("1.Permutation Of String\n2.Binary Search\n3.Insertion Sort\n4.Bubble Sort\n5.Merge Sort\n6.Anagram Detection\n7.Prime Numbers From 0 to 1000\n8.Find Anagram,Prime,Palindrom");
+            Console.WriteLine("1.Permutation Of String\n2.Binary Search\n3.Insertion Sort\n4.Bubble Sort\n5.Merge Sort\n6.Anagram Detection\n7.Prime Numbers From 0 to 1000\n8.Find Anagram,Prime,Palindrom\n9.Question to find your number\n10.Customer Regex Message");
             Console.WriteLine("----------------------------------------");
             Console.WriteLine("Enter Your Choice");
             switch (Console.ReadLine())
@@ -53,6 +53,12 @@ namespace AlgorithmBasedPrograms
                     break;
                 case "8":
                     PrimeAnagram.ReadInputForPrimeAnagram();
+                    break;
+                case "9":
+                    GuessTheNumber.ThinkingNumber();
+                    break;
+                case "10":
+                    RegexProgram.CustomerRegexMessage();
                     break;
                 default:
                     Console.WriteLine("Enter Valid Choice");
